@@ -3,12 +3,12 @@ import axios from 'axios';
 import './App.css';
 
 // API base URL - change this to your backend URL
-const API_BASE_URL = process.env.API_BASE_URL || 'http://localhost:4000/api';
+const API_BASE_URL = process.env.API_BASE_URL;
 
 // Configure axios
 const api = axios.create({
   baseURL: API_BASE_URL,
-  timeout: 10000,
+  timeout: 30000,
 });
 
 function App() {
